@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BudgetWise GenZ | Expenses</title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="brand">BudgetWise GenZ</div>
+            <form action="index.html" method="GET">
+                <button type="submit" class="btn btn-secondary" style="padding: 0.5rem 1rem;">
+                    <i class="fas fa-arrow-left"></i> Back
+                </button>
+            </form>
+        </header>
+
+        <section id="expenses">
+            <div class="grid">
+                <!-- Add Expense Form -->
+                <div class="card glass">
+                    <h3>Add New Expense</h3>
+                    <form action="add-expense.html" method="POST">
+                        <div class="input-group">
+                            <label>Amount (₹)</label>
+                            <input type="number" name="amount" placeholder="0.00" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Category</label>
+                            <select name="category">
+                                <option>Food & Dining</option>
+                                <option>Transportation</option>
+                                <option>Shopping</option>
+                                <option>Entertainment</option>
+                                <option>Subscription</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label>Date</label>
+                            <input type="date" name="date" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Note (Optional)</label>
+                            <input type="text" name="note" placeholder="Lunch at Samosa Hub">
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            Save Expense
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Summary & Filter -->
+                <div class="card glass">
+                    <h3 style="margin-bottom: 1rem;">Recent Transactions</h3>
+                    <div class="transaction-list">
+                        <div class="transaction-item">
+                            <div style="display: flex; gap: 1rem; align-items: center;">
+                                <div class="glass"
+                                    style="padding: 0.75rem; border-radius: 12px; color: var(--primary);">
+                                    <i class="fas fa-utensils"></i>
+                                </div>
+                                <div>
+                                    <div style="font-weight: 600;">Starbucks Coffee</div>
+                                    <div style="font-size: 0.75rem; color: var(--text-muted);">Today, 10:30 AM</div>
+                                </div>
+                            </div>
+                            <div style="font-weight: 700; color: #ef4444;">- ₹350.00</div>
+                        </div>
+
+                        <div class="transaction-item">
+                            <div style="display: flex; gap: 1rem; align-items: center;">
+                                <div class="glass"
+                                    style="padding: 0.75rem; border-radius: 12px; color: var(--secondary);">
+                                    <i class="fas fa-bus"></i>
+                                </div>
+                                <div>
+                                    <div style="font-weight: 600;">Uber Trip</div>
+                                    <div style="font-size: 0.75rem; color: var(--text-muted);">Yesterday</div>
+                                </div>
+                            </div>
+                            <div style="font-weight: 700; color: #ef4444;">- ₹120.00</div>
+                        </div>
+
+                        <div class="transaction-item">
+                            <div style="display: flex; gap: 1rem; align-items: center;">
+                                <div class="glass" style="padding: 0.75rem; border-radius: 12px; color: var(--accent);">
+                                    <i class="fas fa-hand-holding-dollar"></i>
+                                </div>
+                                <div>
+                                    <div style="font-weight: 600;">Pocket Money</div>
+                                    <div style="font-size: 0.75rem; color: var(--text-muted);">3 days ago</div>
+                                </div>
+                            </div>
+                            <div style="font-weight: 700; color: var(--secondary);">+ ₹5,000.00</div>
+                        </div>
+                    </div>
+
+                    <form action="all-transactions.html" method="GET" style="margin-top: 1.5rem;">
+                        <button type="submit" class="btn btn-secondary" style="width: 100%;">View All
+                            Transactions</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="glass">
+        <form action="index.html" method="GET">
+            <button type="submit">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </button>
+        </form>
+        <form action="expenses.html" method="GET">
+            <button type="submit" class="active">
+                <i class="fas fa-wallet"></i>
+                <span>Expenses</span>
+            </button>
+        </form>
+        <form action="learn.html" method="GET">
+            <button type="submit">
+                <i class="fas fa-book-open"></i>
+                <span>Learn</span>
+            </button>
+        </form>
+        <form action="trade.html" method="GET">
+            <button type="submit">
+                <i class="fas fa-chart-line"></i>
+                <span>Trade</span>
+            </button>
+        </form>
+        <form action="profile.html" method="GET">
+            <button type="submit">
+                <i class="fas fa-user"></i>
+                <span>Profile</span>
+            </button>
+        </form>
+    </nav>
+</body>
+
+</html>

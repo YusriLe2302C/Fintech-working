@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BudgetWise GenZ | Register</title>
+    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body style="display: flex; align-items: center; justify-content: center; padding: 2rem 0;">
+    <div class="container" style="max-width: 500px; padding: 1rem;">
+        <div style="text-align: center; margin-bottom: 2rem;">
+            <h1 class="brand" style="font-size: 2.5rem; margin-bottom: 0.5rem;">BudgetWise</h1>
+            <p style="color: var(--text-muted);">Start your financial journey today.</p>
+        </div>
+
+        <div class="card glass">
+            <h2 style="margin-bottom: 1.5rem; text-align: center;">Create Account</h2>
+            <form action="/register" method="POST">
+                <div class="input-group">
+                    <label>Full Name</label>
+                    <input type="text" name="name" placeholder="John Doe" required>
+                </div>
+                <div class="input-group">
+                    <label>Email Address</label>
+                    <input type="email" name="email" placeholder="john@example.com" required>
+                </div>
+                <div class="input-group">
+                    <label>Username</label>
+                    <input type="text" name="username" placeholder="Bolimaga Zaibu" required>
+                </div>
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password" name="password" placeholder="password" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1.5rem; padding: 1rem;">
+                    Get Started
+                </button>
+            </form>
+
+            <div style="margin-top: 2rem; text-align: center; font-size: 0.9rem;">
+                <span style="color: var(--text-muted);">Already have an account?</span>
+                <form action="/login.html" method="GET" style="display: inline;">
+                    <button type="submit"
+                        style="background: none; border: none; color: var(--primary); cursor: pointer; font-weight: 600; padding: 0 0.5rem;">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

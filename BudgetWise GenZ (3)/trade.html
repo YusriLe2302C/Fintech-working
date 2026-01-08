@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BudgetWise GenZ | Trade</title>
+    <link rel="stylesheet" href="trade.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="brand">Stock Market</div>
+            <div class="user-pill glass">
+                <span>Investing: ₹12,400</span>
+            </div>
+        </header>
+
+        <section id="trade">
+            <!-- Portfolio Summary -->
+            <div class="card glass"
+                style="margin-bottom: 2rem; background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(0, 0, 0, 0.4));">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                    <div>
+                        <span class="stat-label">Portfolio Value</span>
+                        <div class="stat-value">₹12,400.00</div>
+                        <div style="color: var(--secondary); font-weight: 600;">+₹1,240 (10.0%)</div>
+                    </div>
+                    <form action="invest.html" method="GET">
+                        <button type="submit" class="btn btn-primary">Invest More</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Groww-inspired Stock List -->
+            <h3 style="margin-bottom: 1rem;">Watchlist / Trending</h3>
+            <div class="glass" style="overflow: hidden;">
+                <div class="transaction-list">
+                    <!-- Stock 1 -->
+                    <div class="transaction-item glass-hover">
+                        <div style="display: flex; gap: 1rem; align-items: center;">
+                            <div class="glass"
+                                style="width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: 800; color: #fff; background: #000;">
+                                R
+                            </div>
+                            <div>
+                                <div style="font-weight: 600;">RELIANCE</div>
+                                <div style="font-size: 0.75rem; color: var(--text-muted);">Reliance Industries</div>
+                            </div>
+                        </div>
+                        <div style="text-align: right;">
+                            <div style="font-weight: 700;">₹2,450.00</div>
+                            <div class="stock-badge up">+1.45%</div>
+                        </div>
+                    </div>
+
+                    <!-- Stock 2 -->
+                    <div class="transaction-item glass-hover">
+                        <div style="display: flex; gap: 1rem; align-items: center;">
+                            <div class="glass"
+                                style="width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: 800; color: #fff; background: #00a8e8;">
+                                T
+                            </div>
+                            <div>
+                                <div style="font-weight: 600;">TCS</div>
+                                <div style="font-size: 0.75rem; color: var(--text-muted);">Tata Consultancy Services
+                                </div>
+                            </div>
+                        </div>
+                        <div style="text-align: right;">
+                            <div style="font-weight: 700;">₹3,320.60</div>
+                            <div class="stock-badge down">-0.82%</div>
+                        </div>
+                    </div>
+
+                    <!-- Stock 3 -->
+                    <div class="transaction-item glass-hover">
+                        <div style="display: flex; gap: 1rem; align-items: center;">
+                            <div class="glass"
+                                style="width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: 800; color: #fff; background: #e21c21;">
+                                Z
+                            </div>
+                            <div>
+                                <div style="font-weight: 600;">ZOMATO</div>
+                                <div style="font-size: 0.75rem; color: var(--text-muted);">Zomato Ltd</div>
+                            </div>
+                        </div>
+                        <div style="text-align: right;">
+                            <div style="font-weight: 700;">₹102.40</div>
+                            <div class="stock-badge up">+8.20%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 1.5rem; display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                <form action="market-news.html" method="GET">
+                    <button type="submit" class="btn btn-secondary" style="width: 100%;">Market News</button>
+                </form>
+                <form action="my-orders.html" method="GET">
+                    <button type="submit" class="btn btn-secondary" style="width: 100%;">My Orders</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="glass">
+        <form action="index.html" method="GET">
+            <button type="submit">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </button>
+        </form>
+        <form action="expenses.html" method="GET">
+            <button type="submit">
+                <i class="fas fa-wallet"></i>
+                <span>Expenses</span>
+            </button>
+        </form>
+        <form action="learn.html" method="GET">
+            <button type="submit">
+                <i class="fas fa-book-open"></i>
+                <span>Learn</span>
+            </button>
+        </form>
+        <form action="trade.html" method="GET">
+            <button type="submit" class="active">
+                <i class="fas fa-chart-line"></i>
+                <span>Trade</span>
+            </button>
+        </form>
+        <form action="profile.html" method="GET">
+            <button type="submit">
+                <i class="fas fa-user"></i>
+                <span>Profile</span>
+            </button>
+        </form>
+    </nav>
+</body>
+
+</html>

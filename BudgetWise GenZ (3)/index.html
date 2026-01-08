@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BudgetWise GenZ | Dashboard</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- Lucide Icons (Mocking with a font or just using CSS/Unicode for now since external scripts might be banned if strictly No JS, but FontAwesome/Google Icons are usually okay. I'll use Unicode symbols to be safe or assuming the user will add their preferred icon library) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="brand">BudgetWise GenZ</div>
+            <div class="user-pill glass">
+                <span>🔥 7 Day Streak</span>
+            </div>
+        </header>
+
+        <section id="dashboard">
+            <div class="grid">
+                <!-- Balance Card -->
+                <div class="card glass">
+                    <span class="stat-label">Total Balance</span>
+                    <div class="stat-value">₹45,280.00</div>
+                    <div style="color: var(--secondary); font-size: 0.8rem;">+12% from last month</div>
+                </div>
+
+                <!-- Savings Goal -->
+                <div class="card glass">
+                    <span class="stat-label">Savings Goal</span>
+                    <div class="stat-value">₹1,20,000</div>
+                    <div class="progress-container"
+                        style="height: 8px; background: rgba(255,255,255,0.1); border-radius: 4px; margin-top: 1rem;">
+                        <div class="progress-bar"
+                            style="width: 38%; height: 100%; background: linear-gradient(to right, var(--primary), var(--accent)); border-radius: 4px;">
+                        </div>
+                    </div>
+                    <div style="margin-top: 0.5rem; font-size: 0.8rem; text-align: right;">38% Achieved</div>
+                </div>
+
+                <!-- AI Suggestion (Dumb UI) -->
+                <div class="card glass" style="border-left: 4px solid var(--primary);">
+                    <span class="stat-label">Smart Insight</span>
+                    <p style="margin-top: 0.5rem; font-size: 0.95rem; line-height: 1.5;">You've spent 20% more on
+                        <b>Dining Out</b> this week. Consider a home-cooked meal to save ₹1,500!
+                    </p>
+                </div>
+            </div>
+
+            <h2 style="margin: 2rem 0 1rem 0;">Overview</h2>
+            <div class="grid">
+                <div class="card glass" style="grid-column: span 2;">
+                    <span class="stat-label">Spending Trend</span>
+                    <div
+                        style="height: 200px; display: flex; align-items: flex-end; justify-content: space-around; padding-top: 2rem;">
+                        <!-- CSS Mock Chart -->
+                        <div
+                            style="width: 30px; height: 60%; background: var(--primary); border-radius: 6px 6px 0 0; opacity: 0.7;">
+                        </div>
+                        <div
+                            style="width: 30px; height: 80%; background: var(--primary); border-radius: 6px 6px 0 0; opacity: 0.7;">
+                        </div>
+                        <div
+                            style="width: 30px; height: 40%; background: var(--primary); border-radius: 6px 6px 0 0; opacity: 0.7;">
+                        </div>
+                        <div style="width: 30px; height: 95%; background: var(--primary); border-radius: 6px 6px 0 0;">
+                        </div>
+                        <div
+                            style="width: 30px; height: 50%; background: var(--primary); border-radius: 6px 6px 0 0; opacity: 0.7;">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card glass">
+                    <span class="stat-label">Recent Achievements</span>
+                    <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+                        <div style="font-size: 2rem;">🏆</div>
+                        <div>
+                            <div style="font-weight: 600;">Penny Pincher</div>
+                            <div style="font-size: 0.8rem; color: var(--text-muted);">Saved 10% this week</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- No-Link Navigation (Forms with buttons) -->
+    <nav class="glass">
+        <form action="index.html" method="GET">
+            <button type="submit" class="active">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </button>
+        </form>
+        <form action="expenses.html" method="GET">
+            <button type="submit">
+                <i class="fas fa-wallet"></i>
+                <span>Expenses</span>
+            </button>
+        </form>
+        <form action="learn.html" method="GET">
+            <button type="submit">
+                <i class="fas fa-book-open"></i>
+                <span>Learn</span>
+            </button>
+        </form>
+        <form action="trade.html" method="GET">
+            <button type="submit">
+                <i class="fas fa-chart-line"></i>
+                <span>Trade</span>
+            </button>
+        </form>
+        <form action="profile.html" method="GET">
+            <button type="submit">
+                <i class="fas fa-user"></i>
+                <span>Profile</span>
+            </button>
+        </form>
+    </nav>
+</body>
+
+</html>

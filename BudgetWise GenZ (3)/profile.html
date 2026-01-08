@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BudgetWise GenZ | Profile</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="brand">My Profile</div>
+            <form action="logout.html" method="POST">
+                <button type="submit" class="btn btn-secondary"
+                    style="color: #ef4444; border-color: rgba(239, 68, 68, 0.2);">
+                    <i class="fas fa-sign-out-alt"></i> Logout
+                </button>
+            </form>
+        </header>
+
+        <section id="profile">
+            <div class="card glass" style="text-align: center; padding: 3rem 1rem; margin-bottom: 2rem;">
+                <div
+                    style="width: 100px; height: 100px; border-radius: 50%; background: linear-gradient(135deg, var(--primary), var(--accent)); margin: 0 auto 1.5rem auto; display: flex; align-items: center; justify-content: center; font-size: 3rem; border: 4px solid var(--border);">
+                    👤
+                </div>
+                <h2>GenZ Saver</h2>
+                <p style="color: var(--text-muted);">Joined January 2026</p>
+                <div style="margin-top: 1rem; display: flex; justify-content: center; gap: 2rem;">
+                    <div>
+                        <div style="font-weight: 700; font-size: 1.2rem;">Lvl 12</div>
+                        <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Finance
+                            Ninja</div>
+                    </div>
+                    <div style="width: 1px; background: var(--border);"></div>
+                    <div>
+                        <div style="font-weight: 700; font-size: 1.2rem;">2,450</div>
+                        <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Total
+                            Points</div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 style="margin-bottom: 1.5rem;">Achievements</h3>
+            <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));">
+                <div class="card glass" style="text-align: center; padding: 1.5rem 0.5rem;">
+                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">🔥</div>
+                    <div style="font-weight: 600; font-size: 0.9rem;">7 Day Streak</div>
+                    <div style="font-size: 0.7rem; color: var(--secondary); margin-top: 0.25rem;">UNLOCKED</div>
+                </div>
+                <div class="card glass" style="text-align: center; padding: 1.5rem 0.5rem;">
+                    <div style="font-size: 2rem; margin-bottom: 0.5rem; filter: grayscale(1); opacity: 0.5;">💰</div>
+                    <div style="font-weight: 600; font-size: 0.9rem;">First ₹1K Saved</div>
+                    <div style="font-size: 0.7rem; color: var(--text-muted); margin-top: 0.25rem;">LOCKED</div>
+                </div>
+                <div class="card glass" style="text-align: center; padding: 1.5rem 0.5rem;">
+                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">🎓</div>
+                    <div style="font-weight: 600; font-size: 0.9rem;">Bookworm</div>
+                    <div style="font-size: 0.7rem; color: var(--secondary); margin-top: 0.25rem;">UNLOCKED</div>
+                </div>
+                <div class="card glass" style="text-align: center; padding: 1.5rem 0.5rem;">
+                    <div style="font-size: 2rem; margin-bottom: 0.5rem; filter: grayscale(1); opacity: 0.5;">📈</div>
+                    <div style="font-weight: 600; font-size: 0.9rem;">First Trade</div>
+                    <div style="font-size: 0.7rem; color: var(--text-muted); margin-top: 0.25rem;">LOCKED</div>
+                </div>
+            </div>
+
+            <form action="edit-profile.html" method="GET" style="margin-top: 2rem;">
+                <button type="submit" class="btn btn-secondary" style="width: 100%;">Edit Profile Settings</button>
+            </form>
+        </section>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="glass">
+        <form action="index.html" method="GET">
+            <button type="submit">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </button>
+        </form>
+        <form action="expenses.html" method="GET">
+            <button type="submit">
+                <i class="fas fa-wallet"></i>
+                <span>Expenses</span>
+            </button>
+        </form>
+        <form action="learn.html" method="GET">
+            <button type="submit">
+                <i class="fas fa-book-open"></i>
+                <span>Learn</span>
+            </button>
+        </form>
+        <form action="trade.html" method="GET">
+            <button type="submit">
+                <i class="fas fa-chart-line"></i>
+                <span>Trade</span>
+            </button>
+        </form>
+        <form action="profile.html" method="GET">
+            <button type="submit" class="active">
+                <i class="fas fa-user"></i>
+                <span>Profile</span>
+            </button>
+        </form>
+    </nav>
+</body>
+
+</html>

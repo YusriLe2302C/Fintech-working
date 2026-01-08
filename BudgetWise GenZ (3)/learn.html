@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BudgetWise GenZ | Learn</title>
+    <link rel="stylesheet" href="learn.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="brand">Learn Financial Literacy</div>
+            <div class="user-pill glass">
+                <span>📚 3 Lessons Completed</span>
+            </div>
+        </header>
+
+        <section id="learn">
+            <div class="grid">
+                <!-- Lesson Card 1 -->
+                <div class="card glass">
+                    <div
+                        style="background: linear-gradient(135deg, #f59e0b, #d97706); height: 120px; border-radius: 12px; margin-bottom: 1rem; display: flex; align-items: center; justify-content: center; font-size: 3rem;">
+                        💰
+                    </div>
+                    <h3>The Psychology of Money</h3>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0.5rem 0 1.5rem 0;">Understand why
+                        you spend the way you do and how to master your behavior.</p>
+                    <div class="progress-container"
+                        style="height: 6px; background: rgba(255,255,255,0.1); border-radius: 3px; margin-bottom: 1.5rem;">
+                        <div style="width: 60%; height: 100%; background: #f59e0b; border-radius: 3px;"></div>
+                    </div>
+                    <form action="lesson-psychology.html" method="GET">
+                        <button type="submit" class="btn btn-primary" style="width: 100%; background: #f59e0b;">Continue
+                            Learning</button>
+                    </form>
+                </div>
+
+                <!-- Lesson Card 2 -->
+                <div class="card glass">
+                    <div
+                        style="background: linear-gradient(135deg, #10b981, #059669); height: 120px; border-radius: 12px; margin-bottom: 1rem; display: flex; align-items: center; justify-content: center; font-size: 3rem;">
+                        🏠
+                    </div>
+                    <h3>Rich Dad Poor Dad</h3>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0.5rem 0 1.5rem 0;">Learn the
+                        difference between assets and liabilities in simple GenZ terms.</p>
+                    <div class="progress-container"
+                        style="height: 6px; background: rgba(255,255,255,0.1); border-radius: 3px; margin-bottom: 1.5rem;">
+                        <div style="width: 20%; height: 100%; background: #10b981; border-radius: 3px;"></div>
+                    </div>
+                    <form action="lesson-rich-dad.html" method="GET">
+                        <button type="submit" class="btn btn-primary" style="width: 100%; background: #10b981;">Start
+                            Lesson</button>
+                    </form>
+                </div>
+
+                <!-- Quiz Prompt -->
+                <div class="card glass"
+                    style="border: 2px dashed var(--primary); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+                    <i class="fas fa-puzzle-piece"
+                        style="font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem;"></i>
+                    <h3>Ready for a Quiz?</h3>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0.5rem 0 1.5rem 0;">Test your
+                        knowledge and earn 500 points!</p>
+                    <form action="quiz.html" method="GET">
+                        <button type="submit" class="btn btn-secondary">Take Quiz</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="glass">
+        <form action="index.html" method="GET">
+            <button type="submit">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </button>
+        </form>
+        <form action="expenses.html" method="GET">
+            <button type="submit">
+                <i class="fas fa-wallet"></i>
+                <span>Expenses</span>
+            </button>
+        </form>
+        <form action="learn.html" method="GET">
+            <button type="submit" class="active">
+                <i class="fas fa-book-open"></i>
+                <span>Learn</span>
+            </button>
+        </form>
+        <form action="trade.html" method="GET">
+            <button type="submit">
+                <i class="fas fa-chart-line"></i>
+                <span>Trade</span>
+            </button>
+        </form>
+        <form action="profile.html" method="GET">
+            <button type="submit">
+                <i class="fas fa-user"></i>
+                <span>Profile</span>
+            </button>
+        </form>
+    </nav>
+</body>
+
+</html>
